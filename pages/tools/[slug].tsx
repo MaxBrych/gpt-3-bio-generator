@@ -12,6 +12,7 @@ import Footer from "../../components/Footer";
 import Header from "../../components/Header";
 import Chat from "../../components/Tools/Chat";
 import Subheader from "../../components/Subheader";
+import Sidebar from "../../components/Sidebar";
 
 interface ToolPageProps {
   tool: ToolProps;
@@ -24,18 +25,21 @@ const ToolPage: React.FC<ToolPageProps> = ({ tool }) => {
         <title>Nordkurier KI-Chat</title>
         <link rel="icon" href="/favicon.ico" />
       </Head>
-      <div className="flex flex-col items-center justify-center min-h-screen ">
-        <div className="flex flex-col justify-between md:justify-center w-full min-h-screen md:h-3/4  lg:max-w-5xl">
-          <div>
-            <Header />
-            <Subheader tool={tool} />
-          </div>
+
+      <div className="max-h-screen min-h-screen md:grid md:grid-cols-4">
+        <div className="h-full md:col-span-1">
+          <Header />
+          <Sidebar tools={tools} />
+          <Footer />
+        </div>
+        <div className="h-full md:col-span-3">
+          <Subheader tool={tool} />
           <Chat tool={tool} />
         </div>
-        <div className="absolute w-2/3 left-0 top-0 mr-4 -z-10 rounded-full bg-primary-100 bg-cyan-80 opacity-20 h-1/3 light:mix-blend-multiply filter blur-3xl animate-blob"></div>
-        <div className="absolute w-2/3 right-0 bottom-0 mr-4 -z-10 rounded-full bg-primary-100 bg-cyan-80 opacity-20 h-1/3 light:mix-blend-multiply filter blur-3xl animate-blob"></div>
-        <div className="absolute w-full mr-4 -z-10 rounded-full bg-primary-100 bg-cyan-90 opacity-20 h-full light:mix-blend-multiply filter blur-3xl animate-blob"></div>
       </div>
+      <div className="absolute top-0 left-0 w-2/3 mr-4 rounded-full -z-10 bg-primary-100 bg-cyan-80 opacity-20 h-1/3 light:mix-blend-multiply filter blur-3xl animate-blob"></div>
+      <div className="absolute bottom-0 right-0 w-2/3 mr-4 rounded-full -z-10 bg-primary-100 bg-cyan-80 opacity-20 h-1/3 light:mix-blend-multiply filter blur-3xl animate-blob"></div>
+      <div className="absolute w-full h-full mr-4 rounded-full -z-10 bg-primary-100 bg-cyan-90 opacity-20 light:mix-blend-multiply filter blur-3xl animate-blob"></div>
     </>
   );
 };

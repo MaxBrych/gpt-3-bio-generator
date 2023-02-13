@@ -64,7 +64,7 @@ const Chat: React.FC<ChatPageProps> = ({ tool }) => {
     setLoading(false);
   };
   return (
-    <main className="flex bg-white flex-col items-end justify-end flex-1 w-full h-full md:flex-auto max-w-5xl px-4 md:px-12 pt-6 text-center md:rounded-b-xl md:h-3/4">
+    <main className="flex flex-col items-end justify-end flex-1 w-full h-full max-w-5xl px-4 pt-6 text-center bg-cyan-95 md:flex-auto md:px-12 md:rounded-3xl md:h-3/4">
       {/* DROPDOWN */}
       <div className="hidden">
         <DropDown vibe={vibe} setVibe={(newVibe) => setVibe(newVibe)} />
@@ -81,7 +81,7 @@ const Chat: React.FC<ChatPageProps> = ({ tool }) => {
 
         <ResizablePanel>
           <AnimatePresence mode="wait">
-            <motion.div className="my-10 space-y-10 flex justify-start items-start">
+            <motion.div className="flex items-start justify-start my-10 space-y-10">
               {generatedBios && (
                 <>
                   <div className="flex flex-col items-start justify-start max-w-xl mx-auto space-y-8">
@@ -91,7 +91,7 @@ const Chat: React.FC<ChatPageProps> = ({ tool }) => {
                       .map((generatedBio) => {
                         return (
                           <div
-                            className="p-4 transition  bg-dark-95 rounded-3xl hover:bg-gray-100 cursor-pointer"
+                            className="p-4 transition bg-white cursor-pointer rounded-3xl hover:bg-dark-99"
                             onClick={() => {
                               navigator.clipboard.writeText(generatedBio);
                               toast("Text wurde kopiert", {
@@ -113,19 +113,19 @@ const Chat: React.FC<ChatPageProps> = ({ tool }) => {
       </div>
 
       {/* INPUT */}
-      <div className="flex flex-row items-end justify-start w-full gap-1 md:gap-4 mb-4">
+      <div className="flex flex-row items-end justify-start w-full gap-1 mb-4 md:gap-4">
         <textarea
           value={bio}
           //onKeyPress={(e) => generateBio(e)}
           onChange={(e) => setBio(e.target.value)}
           rows={1}
-          className="w-full flex items-center justify-center md:p-4 leading-4 placeholder:text-sm resize-none flex-1 overflow-hidden  h-12 md:h-14 border-cyan-95 bg-cyan-95 rounded-full shadow-sm hover:bg-cyan-95 focus:border-cyan-95 focus:ring-cyan-95"
+          className="flex items-center justify-center flex-1 w-full h-12 overflow-hidden leading-4 bg-white border-white rounded-full shadow-sm resize-none md:p-4 placeholder:text-sm md:h-14 hover:border-dark-95 focus:border-cyan-90 focus:ring-cyan-90"
           placeholder={"Dein Text hier..."}
         />
 
         {!loading && (
           <button
-            className="h-12 w-12 md:w-14 md:h-14 flex flex-none justify-center items-center font-medium text-white bg-cyan-50 rounded-full sm:mt-10 hover:bg-cyan-40"
+            className="flex items-center justify-center flex-none w-12 h-12 font-medium text-white rounded-full md:w-14 md:h-14 bg-cyan-40 sm:mt-10 hover:bg-cyan-30"
             onClick={(e) => generateBio(e)}
           >
             &rarr;
@@ -133,7 +133,7 @@ const Chat: React.FC<ChatPageProps> = ({ tool }) => {
         )}
         {loading && (
           <button
-            className="h-12 w-12 md:w-14 md:h-14 flex flex-none justify-center items-center font-medium text-white bg-cyan-50 rounded-full sm:mt-10 hover:bg-cyan-40"
+            className="flex items-center justify-center flex-none w-12 h-12 font-medium text-white rounded-full md:w-14 md:h-14 bg-cyan-50 sm:mt-10 hover:bg-cyan-40"
             disabled
           >
             <LoadingDots color="white" style="large" />
