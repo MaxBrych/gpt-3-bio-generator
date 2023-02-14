@@ -64,7 +64,7 @@ const Chat: React.FC<ChatPageProps> = ({ tool }) => {
     setLoading(false);
   };
   return (
-    <main className="flex flex-col items-end justify-end flex-1 w-full min-h-screen  md:h-full max-w-5xl px-4 pt-6 text-center bg-cyan-95 md:flex-auto md:px-12 md:rounded-3xl ">
+    <main className="flex flex-col items-end justify-end flex-1 w-full max-w-5xl min-h-screen px-4 pt-6 text-center md:h-full bg-cyan-95 md:flex-auto md:px-12 md:rounded-3xl ">
       {/* DROPDOWN */}
       <div className="hidden">
         <DropDown vibe={vibe} setVibe={(newVibe) => setVibe(newVibe)} />
@@ -119,7 +119,7 @@ const Chat: React.FC<ChatPageProps> = ({ tool }) => {
           //onKeyPress={(e) => generateBio(e)}
           onChange={(e) => setBio(e.target.value)}
           rows={1}
-          className="flex items-center justify-center flex-1 w-full h-12 overflow-hidden leading-4 bg-white border-white rounded-full  resize-none md:p-4 placeholder:text-sm md:h-14 hover:border-dark-95 focus:border-cyan-90 focus:ring-cyan-90"
+          className="flex items-center justify-center flex-1 w-full h-12 overflow-hidden leading-4 bg-white border-white rounded-full resize-none md:p-4 placeholder:text-sm md:h-14 hover:border-dark-95 focus:border-cyan-90 focus:ring-cyan-90"
           placeholder={"Dein Text hier..."}
         />
 
