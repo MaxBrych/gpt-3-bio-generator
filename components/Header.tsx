@@ -3,8 +3,8 @@ import Link from "next/link";
 
 export default function Header() {
   return (
-    <header className="flex items-center justify-center w-full h-16 bg-white border-b lg:max-w-5xl lg:rounded-t-xl border-dark-95 sm:px-4">
-      <Link href="/" className="flex items-center justify-center space-x-3">
+    <header className="flex items-center justify-start w-full h-16 bg-white border-b lg:max-w-5xl lg:rounded-t-xl border-dark-95 sm:px-4">
+      <Link href="/" className="flex items-center justify-start space-x-3">
         <Image
           alt="header text"
           src="/NK_Logo.svg"
@@ -12,8 +12,8 @@ export default function Header() {
           width={32}
           height={32}
         />
-        <h1 className="ml-2 text-xl font-bold tracking-tight sm:text-2xl">
-          Nordkurier <span className="font-medium text-cyan-50">AI-Tools</span>
+        <h1 className="ml-2 text-xl font-bold tracking-tight sm:text-xl">
+          AI-Tools
         </h1>
       </Link>
     </header>

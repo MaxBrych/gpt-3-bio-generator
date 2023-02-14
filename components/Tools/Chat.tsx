@@ -8,6 +8,7 @@ import Image from "next/image";
 import { ToolProps, tools } from "../Tools";
 
 import { useState } from "react";
+import Subheader from "../Subheader";
 
 interface ChatPageProps {
   tool: ToolProps;
@@ -20,7 +21,6 @@ const Chat: React.FC<ChatPageProps> = ({ tool }) => {
   const [generatedBios, setGeneratedBios] = useState<String>("");
 
   console.log("Streamed response: ", generatedBios);
-
   const toolPrompt = tool.toolPrompt;
 
   const prompt = `${toolPrompt}$ ${bio}$`;
@@ -64,13 +64,13 @@ const Chat: React.FC<ChatPageProps> = ({ tool }) => {
     setLoading(false);
   };
   return (
-    <main className="flex flex-col items-end justify-end flex-1 w-full h-full max-w-5xl px-4 pt-6 text-center bg-cyan-95 md:flex-auto md:px-12 md:rounded-3xl md:h-3/4">
+    <main className="flex flex-col items-end justify-end flex-1 w-full min-h-screen  md:h-full max-w-5xl px-4 pt-6 text-center bg-cyan-95 md:flex-auto md:px-12 md:rounded-3xl ">
       {/* DROPDOWN */}
       <div className="hidden">
         <DropDown vibe={vibe} setVibe={(newVibe) => setVibe(newVibe)} />
       </div>
       {/**/}
-
+      <Subheader tool={tool} />
       <div />
       <div className="w-full h-full pb-4">
         <Toaster
@@ -119,7 +119,7 @@ const Chat: React.FC<ChatPageProps> = ({ tool }) => {
           //onKeyPress={(e) => generateBio(e)}
           onChange={(e) => setBio(e.target.value)}
           rows={1}
-          className="flex items-center justify-center flex-1 w-full h-12 overflow-hidden leading-4 bg-white border-white rounded-full shadow-sm resize-none md:p-4 placeholder:text-sm md:h-14 hover:border-dark-95 focus:border-cyan-90 focus:ring-cyan-90"
+          className="flex items-center justify-center flex-1 w-full h-12 overflow-hidden leading-4 bg-white border-white rounded-full  resize-none md:p-4 placeholder:text-sm md:h-14 hover:border-dark-95 focus:border-cyan-90 focus:ring-cyan-90"
           placeholder={"Dein Text hier..."}
         />
 

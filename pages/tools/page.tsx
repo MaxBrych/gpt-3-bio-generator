@@ -4,18 +4,16 @@ import React from "react";
 
 import { AnimatePresence, motion } from "framer-motion";
 import Head from "next/head";
-
 import Footer from "../../components/Footer";
 import Header from "../../components/Header";
 import Chat from "../../components/Tools/Chat";
-import Subheader from "../../components/Subheader";
 import Sidebar from "../../components/Sidebar";
 
-interface ToolPageProps {
+interface TIndexProps {
   tool: ToolProps;
 }
 
-const ToolPage: React.FC<ToolPageProps> = ({ tool }) => {
+const TIndexPage: React.FC<TIndexProps> = ({ tool }) => {
   return (
     <>
       <Head>
@@ -23,7 +21,7 @@ const ToolPage: React.FC<ToolPageProps> = ({ tool }) => {
         <link rel="icon" href="/favicon.ico" />
       </Head>
 
-      <div className="min-h-screen md:grid md:grid-cols-4 bg-white">
+      <div className="max-h-screen min-h-screen md:grid md:grid-cols-4 bg-white">
         <div className="h-full md:col-span-1">
           <Header />
           <Sidebar tools={tools} />
@@ -37,29 +35,4 @@ const ToolPage: React.FC<ToolPageProps> = ({ tool }) => {
   );
 };
 
-export const getStaticPaths = async () => {
-  const paths = tools.map((tool) => ({
-    params: { slug: tool.slug },
-  }));
-
-  return {
-    paths,
-    fallback: false,
-  };
-};
-
-export const getStaticProps = async ({
-  params,
-}: {
-  params: { slug: string };
-}) => {
-  const tool = tools.find((tool) => tool.slug === params.slug);
-
-  return {
-    props: {
-      tool,
-    },
-  };
-};
-
-export default ToolPage;
+export default TIndexPage;

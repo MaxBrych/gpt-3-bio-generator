@@ -10,7 +10,6 @@ export const Main = () => {
       <h1 className="max-w-2xl mb-4 text-3xl font-semibold tracking-tight text-left sm:text-4xl text-slate-900 md:mb-6">
         Willkommen zurück!
       </h1>
-      <ToolList tools={tools} />
       <ModelList models={models} />
       <p className="mt-5 text-slate-500"></p>
     </main>

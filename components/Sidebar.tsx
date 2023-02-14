@@ -8,7 +8,7 @@ interface ToolListProps {
 
 const Sidebar: React.FC<ToolListProps> = ({ tools }) => (
   <>
-    <div className="hidden w-full min-h-screen gap-2 px-4 bg-white md:flex md:flex-col md:gap-4 ">
+    <div className="hidden w- h-full py-4 gap-2 px-4 bg-white md:flex md:flex-col md:gap-4 ">
       {tools.map((tool) => (
         <Link
           href="/tools/[slug]"
