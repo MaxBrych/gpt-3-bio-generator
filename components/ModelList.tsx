@@ -16,7 +16,7 @@ const ModelList: React.FC<ModelListProps> = ({ models }) => (
     <div className="grid w-full grid-cols-3 gap-2 bg-white md:gap-4">
       {models.map((model) => (
         <Link
-          href="/tools/frage-beantworten"
+          href={`/tools/${model.slug}`}
           key={model.id}
           className="flex flex-col items-center justify-center h-full gap-2 p-2 cursor-pointer md:p-4 md:justify-start md:items-start md:border md:bg-white md:border-dark-90 md:hover:bg-dark-99 rounded-xl"
         >
