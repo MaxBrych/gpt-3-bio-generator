@@ -5,12 +5,12 @@ import Image from "next/image";
 import { useState } from "react";
 import { UploadDropzone } from "react-uploader";
 import { Uploader } from "uploader";
-import { CompareSlider } from "../components/image/CompareSlider";
-import LoadingDots from "../components/LoadingDots";
-import ResizablePanel from "../components/ResizablePanel";
-import Toggle from "../components/image/Toggle";
-import appendNewToName from "../utils/appendNewToName";
-import downloadPhoto from "../utils/downloadPhoto";
+import { CompareSlider } from "../../components/image/CompareSlider";
+import LoadingDots from "../../components/LoadingDots";
+import ResizablePanel from "../../components/ResizablePanel";
+import Toggle from "../../components/image/Toggle";
+import appendNewToName from "../../utils/appendNewToName";
+import downloadPhoto from "../../utils/downloadPhoto";
 
 // Configuration for the uploader
 const uploader = Uploader({

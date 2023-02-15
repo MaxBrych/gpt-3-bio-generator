@@ -8,9 +8,11 @@ interface ModelListProps {
 
 const ModelList: React.FC<ModelListProps> = ({ models }) => (
   <>
-    <h3 className="mb-2 text-lg font-bold tracking-tight md:mb-4 md:text-xl md:font-bold">
-      Models
-    </h3>
+    <a href="https://ai-photo-restorer-rosy.vercel.app/">
+      <h3 className="mb-2 text-lg font-bold tracking-tight md:mb-4 md:text-xl md:font-bold">
+        Models
+      </h3>
+    </a>
     <div className="grid w-full grid-cols-3 gap-2 bg-white md:gap-4">
       {models.map((model) => (
         <Link
@@ -25,12 +27,9 @@ const ModelList: React.FC<ModelListProps> = ({ models }) => (
             <h1 className="text-xs font-semibold leading-3 md:text-base md:text-left">
               {model.name}
             </h1>
-            <a
-              href="https://ai-photo-restorer-rosy.vercel.app/"
-              className="invisible text-sm text-dark-50 md:text-left md:visible"
-            >
+            <p className="invisible text-sm text-dark-50 md:text-left md:visible">
               {model.description}
-            </a>
+            </p>
           </div>
         </Link>
       ))}
