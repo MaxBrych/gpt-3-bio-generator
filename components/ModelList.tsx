@@ -25,9 +25,12 @@ const ModelList: React.FC<ModelListProps> = ({ models }) => (
             <h1 className="text-xs font-semibold leading-3 md:text-base md:text-left">
               {model.name}
             </h1>
-            <p className="invisible text-sm text-dark-50 md:text-left md:visible">
+            <a
+              href="https://ai-photo-restorer-rosy.vercel.app/"
+              className="invisible text-sm text-dark-50 md:text-left md:visible"
+            >
               {model.description}
-            </p>
+            </a>
           </div>
         </Link>
       ))}
