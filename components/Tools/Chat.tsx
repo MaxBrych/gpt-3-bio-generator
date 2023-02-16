@@ -113,7 +113,7 @@ const Chat: React.FC<ChatPageProps> = ({ tool }) => {
       </div>
 
       {/* INPUT */}
-      <div className="fixed  flex flex-row items-end justify-start w-[92vw] md:w-full gap-1 mb-4 left-4 bottom-2 md:relative md:gap-4">
+      <div className="fixed md:static flex flex-row items-end justify-start w-[92vw] md:w-full gap-1 mb-8 left-4 bottom-2  md:gap-4">
         <textarea
           value={bio}
           //onKeyPress={(e) => generateBio(e)}

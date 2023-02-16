@@ -17,7 +17,7 @@ const Home: NextPage = () => {
           <title>Nordkurier KI-Chat</title>
           <link rel="icon" href="/favicon.ico" />
         </Head>
-        <div className=" flex flex-col justify-between md:justify-center w-full min-h-screen lg:max-w-5xl">
+        <div className=" flex flex-col  justify-between md:justify-center w-full min-h-screen lg:max-w-5xl">
           <Header />
           <Main />
           <Footer />

@@ -18,7 +18,7 @@ export const models: ModelProps[] = [
     name: "Bild generieren",
     id: 2,
     description: "Coming soon",
-    slug: "https://ai-photo-restorer-rosy.vercel.app/",
+    slug: "https://nk-bildverbesserung.vercel.app/",
     icon: "https://drive.google.com/uc?export=view&id=1_1_yO6icwZJ0oSlw5zjMwjn6S620qIma",
   },
 ];
