@@ -59,4 +59,12 @@ export const tools: ToolProps[] = [
       "Erstellen Sie eine passende Analogie zum folgendem Satz die beide genannten Wörter beinhalten muss:",
     icon: "https://drive.google.com/uc?export=view&id=11zx_GRYhbbqR9MIutt2hoPjCJHa-kGzW",
   },
+  {
+    name: "Synonym erstellen",
+    id: 7,
+    description: "Erstellt ein Synonym zu einem Wort",
+    slug: "synonym-erstellen",
+    toolPrompt: "Erstelle drei passende Synonyme für das folgende Wort:",
+    icon: "https://drive.google.com/uc?export=view&id=11zx_GRYhbbqR9MIutt2hoPjCJHa-kGzW",
+  },
 ];
