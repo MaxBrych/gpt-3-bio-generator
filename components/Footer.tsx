@@ -2,7 +2,7 @@ import Link from "next/link";
 
 export default function Footer() {
   return (
-    <footer className="flex flex-col items-center justify-center text-xs w-full p-4 space-y-3 text-center bg-white border-t h-14  lg:rounded-b-xl lg:max-w-5xl sm:h-16  border-dark-95 sm:flex-row">
+    <footer className="hidden w-full p-4 space-y-3 text-xs text-center bg-white border-t md:flex md:flex-col md:items-center md:justify-center h-14 lg:rounded-b-xl lg:max-w-5xl sm:h-16 border-dark-95 sm:flex-row">
       <div className="flex items-center w-full gap-1">
         Powered by{" "}
         <a
@@ -18,7 +18,7 @@ export default function Footer() {
           href="https://www.nordkurier-mediengruppe.de/"
           target="_blank"
           rel="noreferrer"
-          className=" font-bold transition  hover:underline underline-offset-2"
+          className="font-bold transition  hover:underline underline-offset-2"
         >
           Nordkurier Mediengruppe
         </a>

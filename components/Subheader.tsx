@@ -9,8 +9,8 @@ interface ToolPageProps {
 
 const Subheader: React.FC<ToolPageProps> = ({ tool }) => {
   return (
-    <div className="flex items-center justify-center w-full mt-2 ">
-      <header className="flex items-center justify-between w-1/2 px-4 rounded-full bg-cyan-90 lg:max-w-5xl h-14 sm:px-4">
+    <div className="fixed flex w-[92vw] items-center justify-center md:w-full mt-2 top-20 left-4 right-4 md:relative ">
+      <header className="flex items-center justify-between w-full px-4 rounded-full md:w-1/2 bg-cyan-90 lg:max-w-5xl h-14 sm:px-4">
         <Link
           href={"/"}
           className="flex items-center justify-center border rounded-full h-9 w-9 border-dark-90 hover:bg-dark-90 md:w-11 md:h-11"
@@ -25,7 +25,9 @@ const Subheader: React.FC<ToolPageProps> = ({ tool }) => {
           />
         </Link>
 
-        <h1 className="font-medium text-md sm:text-md">{tool.description}</h1>
+        <h1 className="font-xsedium text-ss md:text-md sm:text-md">
+          {tool.description}
+        </h1>
         <div></div>
       </header>
     </div>

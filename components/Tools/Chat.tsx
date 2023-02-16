@@ -113,13 +113,13 @@ const Chat: React.FC<ChatPageProps> = ({ tool }) => {
       </div>
 
       {/* INPUT */}
-      <div className="flex flex-row items-end justify-start w-full gap-1 mb-4 md:gap-4">
+      <div className="fixed  flex flex-row items-end justify-start w-[92vw] md:w-full gap-1 mb-4 left-4 bottom-2 md:relative md:gap-4">
         <textarea
           value={bio}
           //onKeyPress={(e) => generateBio(e)}
           onChange={(e) => setBio(e.target.value)}
           rows={1}
-          className="flex items-center justify-center flex-1 w-full h-12 overflow-hidden leading-4 bg-white border-white rounded-full resize-none md:p-4 placeholder:text-sm md:h-14 hover:border-dark-95 focus:border-cyan-90 focus:ring-cyan-90"
+          className="flex items-center justify-center flex-1 w-full h-12 p-3 overflow-hidden bg-white border-white rounded-full resize-none md:p-4 placeholder:text-sm md:h-14 hover:border-dark-95 focus:border-cyan-90 focus:ring-cyan-90"
           placeholder={"Dein Text hier..."}
         />
 
@@ -128,7 +128,14 @@ const Chat: React.FC<ChatPageProps> = ({ tool }) => {
             className="flex items-center justify-center flex-none w-12 h-12 font-medium text-white rounded-full md:w-14 md:h-14 bg-cyan-40 sm:mt-10 hover:bg-cyan-30"
             onClick={(e) => generateBio(e)}
           >
-            &rarr;
+            <Image
+              src={
+                "https://drive.google.com/uc?export=view&id=1Xo-Lu07Qzm9zhs3BY8EGhNwZ8AL9xbVD"
+              }
+              alt={""}
+              width={20}
+              height={20}
+            />
           </button>
         )}
         {loading && (

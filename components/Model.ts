@@ -11,14 +11,14 @@ export const models: ModelProps[] = [
     name: "Chat",
     id: 1,
     description: "Beantwortet Fragen zu einem bestimmten Thema",
-    slug: "frage-beantworten",
+    slug: "https://nk-ai-tools.vercel.app/tools/frage-beantworten",
     icon: "https://drive.google.com/uc?export=view&id=1_1_yO6icwZJ0oSlw5zjMwjn6S620qIma",
   },
   {
     name: "Bild generieren",
     id: 2,
     description: "Coming soon",
-    slug: "restore",
+    slug: "https://ai-photo-restorer-rosy.vercel.app/",
     icon: "https://drive.google.com/uc?export=view&id=1_1_yO6icwZJ0oSlw5zjMwjn6S620qIma",
   },
 ];
