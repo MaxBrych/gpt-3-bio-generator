@@ -62,7 +62,7 @@ export const tools: ToolProps[] = [
   {
     name: "Synonym erstellen",
     id: 7,
-    description: "Erstellt ein Synonym zu einem Wort",
+    description: "Erstell ein Synonym zu einem Wort",
     slug: "synonym-erstellen",
     toolPrompt: "Erstelle drei passende Synonyme für das folgende Wort:",
     icon: "https://drive.google.com/uc?export=view&id=11zx_GRYhbbqR9MIutt2hoPjCJHa-kGzW",
