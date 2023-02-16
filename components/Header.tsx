@@ -3,8 +3,11 @@ import Link from "next/link";
 
 export default function Header() {
   return (
-    <header className="flex items-center justify-start w-full h-16 px-4 bg-white border-b lg:max-w-5xl lg:rounded-t-xl border-dark-95">
-      <Link href="/" className="flex items-center justify-start space-x-3">
+    <header className="fixed top-0 items-center justify-start w-full h-16 px-4 bg-white border-b md:flex lg:max-w-5xl lg:rounded-t-xl border-dark-95">
+      <Link
+        href="/"
+        className="flex items-center justify-start h-16 py-1 space-x-3"
+      >
         <Image
           alt="header text"
           src="/NK_Logo.svg"
