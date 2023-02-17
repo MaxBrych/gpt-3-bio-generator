@@ -11,7 +11,7 @@ export const models: ModelProps[] = [
     name: "Chat",
     id: 1,
     description: "Beantwortet Fragen zu einem bestimmten Thema",
-    slug: "https://nk-ai-tools.vercel.app/tools/frage-beantworten",
+    slug: "https://nk-ai-tools-git-prod-nordkurier-team.vercel.app/tools/frage-beantworten",
     icon: "https://drive.google.com/uc?export=view&id=1_1_yO6icwZJ0oSlw5zjMwjn6S620qIma",
   },
   {
