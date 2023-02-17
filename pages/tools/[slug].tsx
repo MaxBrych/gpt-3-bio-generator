@@ -23,7 +23,7 @@ const ToolPage: React.FC<ToolPageProps> = ({ tool }) => {
         <link rel="icon" href="/favicon.ico" />
       </Head>
 
-      <div className="min-h-screen gap-4 overflow-hidden bg-white md:grid md:grid-cols-4">
+      <div className="min-h-screen gap-4 font-Nunito overflow-hidden bg-white md:grid md:grid-cols-4">
         <div className="h-full md:col-span-1">
           <Header />
           <Sidebar tools={tools} />

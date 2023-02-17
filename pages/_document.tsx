@@ -5,30 +5,35 @@ class MyDocument extends Document {
     return (
       <Html lang="en">
         <Head>
-          <link rel="icon" href="/favicon.ico" />
-          <meta
-            name="description"
-            content="Generate your next Twitter bio in seconds."
+          <link
+            href="https://fonts.googleapis.com/css?family=Nunito"
+            rel="stylesheet"
           />
-          <meta property="og:site_name" content="twitterbio.com" />
+          <link
+            href="https://fonts.googleapis.com/css?family=Merriweather"
+            rel="stylesheet"
+          ></link>
+          <link rel="icon" href="/favicon.ico" />
+          <meta name="description" content="KI Tools für den Nordkurier." />
+          <meta property="og:site_name" content="nk-ki.com" />
           <meta
             property="og:description"
-            content="Generate your next Twitter bio in seconds."
+            content="Verschiedene KI Tools für den Nordkurier"
           />
-          <meta property="og:title" content="Twitter Bio Generator" />
-          <meta name="twitter:card" content="summary_large_image" />
-          <meta name="twitter:title" content="Twitter Bio Generator" />
+          <meta property="og:title" content="NK KI Assistent" />
+          <meta name="nordkurier:card" content="summary_large_image" />
+          <meta name="nordkurier:title" content="NK KI Assistent" />
           <meta
-            name="twitter:description"
+            name="nordkurier:description"
             content="Generate your next Twitter bio in seconds."
           />
           <meta
             property="og:image"
-            content="https://twitterbio.com/og-image.png"
+            content="https://nordkurier.com/og-image.png"
           />
           <meta
-            name="twitter:image"
-            content="https://twitterbio.com/og-image.png"
+            name="nordkurier:image"
+            content="https://nordkurier.com/og-image.png"
           />
         </Head>
         <body>

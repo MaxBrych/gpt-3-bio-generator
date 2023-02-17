@@ -9,7 +9,7 @@ interface ModelListProps {
 const ModelList: React.FC<ModelListProps> = ({ models }) => (
   <>
     <a href="https://ai-photo-restorer-rosy.vercel.app/">
-      <h3 className="mb-2 text-lg font-bold tracking-tight md:mb-4 md:text-xl md:font-bold">
+      <h3 className="mb-2 text-lg font-bold  md:mb-4 md:text-xl md:font-bold">
         Models
       </h3>
     </a>
@@ -27,7 +27,7 @@ const ModelList: React.FC<ModelListProps> = ({ models }) => (
             <h1 className="text-xs font-semibold leading-3 md:text-base md:text-left">
               {model.name}
             </h1>
-            <p className="invisible text-sm text-dark-50 md:text-left md:visible">
+            <p className="invisible font-serif text-sm text-dark-50 md:text-left md:visible">
               {model.description}
             </p>
           </div>
