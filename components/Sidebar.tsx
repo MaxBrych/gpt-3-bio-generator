@@ -2,6 +2,7 @@ import { tools, ToolProps } from "./Tools";
 import Link from "next/link";
 import Image from "next/image";
 import { useRouter } from "next/router";
+import Footer from "./Footer";
 
 interface ToolListProps {
   tools: ToolProps[];
