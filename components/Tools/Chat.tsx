@@ -133,7 +133,7 @@ const Chat: React.FC<ChatPageProps> = ({ tool }) => {
             //onKeyPress={(e) => generateBio(e)}
             onChange={(e) => setBio(e.target.value)}
             rows={1}
-            onKeyDown={(e) => handleKeyDown(e)}
+            onKeyDown={(e) => generateBio(e)}
             className="flex items-center justify-center flex-1 w-full h-12 p-3 overflow-hidden bg-white border-white rounded-full resize-none md:p-4 placeholder:text-sm md:h-14 hover:border-dark-95 focus:border-cyan-90 focus:ring-cyan-90"
             placeholder={"Dein Text hier..."}
           />
