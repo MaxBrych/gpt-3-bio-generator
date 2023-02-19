@@ -20,7 +20,7 @@ const uploader = Uploader({
 });
 const options = {
   maxFileCount: 1,
-  mimeTypes: ["image/jpeg", "image/png", "image/jpg"],
+  mimeTypes: ["image/jpeg", "image/png", "image/jpg", "image/webp"],
   editor: { images: { crop: false } },
   styles: { colors: { primary: "#006689" } },
 };
@@ -105,7 +105,7 @@ const RestoreUpload: NextPage = () => {
               {restoredImage && originalPhoto && !sideBySide && (
                 <div className="flex flex-col sm:space-x-4 sm:flex-row">
                   <div>
-                    <h2 className="mb-1 text-lg font-medium">Original Photo</h2>
+                    <h2 className="mb-1 text-lg font-medium">Original Bild</h2>
                     <Image
                       alt="original photo"
                       src={originalPhoto}
@@ -115,7 +115,9 @@ const RestoreUpload: NextPage = () => {
                     />
                   </div>
                   <div className="mt-8 sm:mt-0">
-                    <h2 className="mb-1 text-lg font-medium">Restored Photo</h2>
+                    <h2 className="mb-1 text-lg font-medium">
+                      Verbessertes Bild
+                    </h2>
                     <a href={restoredImage} target="_blank" rel="noreferrer">
                       <Image
                         alt="restored photo"
@@ -132,7 +134,7 @@ const RestoreUpload: NextPage = () => {
               {loading && (
                 <button
                   disabled
-                  className="w-40 px-4 pt-2 pb-3 mt-8 font-medium text-white bg-black rounded-full hover:bg-black/80"
+                  className="w-40 px-4 pt-2 pb-3 mt-8 font-medium text-white rounded-full bg-cyan-40 hover:bg-cyan-50"
                 >
                   <span className="pt-4">
                     <LoadingDots color="white" style="large" />
@@ -156,7 +158,7 @@ const RestoreUpload: NextPage = () => {
                       setRestoredLoaded(false);
                       setError(null);
                     }}
-                    className="px-4 py-2 mt-8 font-medium text-white transition bg-black rounded-full hover:bg-black/80"
+                    className="px-4 py-2 mt-8 font-medium text-white transition rounded-full bg-cyan-40 hover:bg-cyan-50"
                   >
                     Upload New Photo
                   </button>

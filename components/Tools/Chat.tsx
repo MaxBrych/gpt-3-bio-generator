@@ -7,7 +7,7 @@ import DropDown, { VibeType } from "../DropDown";
 import Image from "next/image";
 import { ToolProps, tools } from "../Tools";
 
-import { useState } from "react";
+import { useState, KeyboardEvent } from "react";
 import Subheader from "../Subheader";
 
 interface ChatPageProps {
@@ -63,6 +63,19 @@ const Chat: React.FC<ChatPageProps> = ({ tool }) => {
 
     setLoading(false);
   };
+
+  function handleKeyDown(event: KeyboardEvent<HTMLTextAreaElement>) {
+    if (event.keyCode === 13) {
+      // check if "enter-key" is pressed
+      event.preventDefault(); // prevent default behavior of "enter-key" in textarea
+      handleSubmit();
+    }
+  }
+  function handleSubmit() {
+    // handle form submission logic here
+    console.log("Submitting text:", generatedBios);
+    setGeneratedBios("");
+  }
   return (
     <main className="flex flex-col items-end justify-end flex-1 w-full md:max-w-[90vw]  min-h-screen px-4 pt-6 text-center md:h-full bg-cyan-95 md:flex-auto md:px-12 md:rounded-3xl ">
       {/* DROPDOWN */}
@@ -113,40 +126,43 @@ const Chat: React.FC<ChatPageProps> = ({ tool }) => {
       </div>
 
       {/* INPUT */}
-      <div className="fixed md:static flex flex-row items-end justify-start w-[92vw] md:w-full gap-1 mb-8 left-4 bottom-2  md:gap-4">
-        <textarea
-          value={bio}
-          //onKeyPress={(e) => generateBio(e)}
-          onChange={(e) => setBio(e.target.value)}
-          rows={1}
-          className="flex items-center justify-center flex-1 w-full h-12 p-3 overflow-hidden bg-white border-white rounded-full resize-none md:p-4 placeholder:text-sm md:h-14 hover:border-dark-95 focus:border-cyan-90 focus:ring-cyan-90"
-          placeholder={"Dein Text hier..."}
-        />
+      <AnimatePresence exitBeforeEnter>
+        <motion.div className="fixed md:static flex flex-row items-end justify-start w-[92vw] md:w-full gap-1 mb-8 left-4 bottom-2  md:gap-4">
+          <textarea
+            value={bio}
+            //onKeyPress={(e) => generateBio(e)}
+            onChange={(e) => setBio(e.target.value)}
+            rows={1}
+            onKeyDown={(e) => handleKeyDown(e)}
+            className="flex items-center justify-center flex-1 w-full h-12 p-3 overflow-hidden bg-white border-white rounded-full resize-none md:p-4 placeholder:text-sm md:h-14 hover:border-dark-95 focus:border-cyan-90 focus:ring-cyan-90"
+            placeholder={"Dein Text hier..."}
+          />
 
-        {!loading && (
-          <button
-            className="flex items-center justify-center flex-none w-12 h-12 font-medium text-white rounded-full md:w-14 md:h-14 bg-cyan-40 sm:mt-10 hover:bg-cyan-30"
-            onClick={(e) => generateBio(e)}
-          >
-            <Image
-              src={
-                "https://drive.google.com/uc?export=view&id=1Xo-Lu07Qzm9zhs3BY8EGhNwZ8AL9xbVD"
-              }
-              alt={""}
-              width={20}
-              height={20}
-            />
-          </button>
-        )}
-        {loading && (
-          <button
-            className="flex items-center justify-center flex-none w-12 h-12 font-medium text-white rounded-full md:w-14 md:h-14 bg-cyan-50 sm:mt-10 hover:bg-cyan-40"
-            disabled
-          >
-            <LoadingDots color="white" style="large" />
-          </button>
-        )}
-      </div>
+          {!loading && (
+            <button
+              className="flex items-center justify-center flex-none w-12 h-12 font-medium text-white transition rounded-full md:w-14 md:h-14 bg-cyan-40 sm:mt-10 hover:bg-cyan-30"
+              onClick={(e) => generateBio(e)}
+            >
+              <Image
+                src={
+                  "https://drive.google.com/uc?export=view&id=1Xo-Lu07Qzm9zhs3BY8EGhNwZ8AL9xbVD"
+                }
+                alt={""}
+                width={20}
+                height={20}
+              />
+            </button>
+          )}
+          {loading && (
+            <button
+              className="flex items-center justify-center flex-none w-12 h-12 font-medium text-white rounded-full md:w-14 md:h-14 bg-cyan-50 sm:mt-10 hover:bg-cyan-40"
+              disabled
+            >
+              <LoadingDots color="white" style="large" />
+            </button>
+          )}
+        </motion.div>
+      </AnimatePresence>
     </main>
   );
 };
