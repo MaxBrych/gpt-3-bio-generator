@@ -71,9 +71,9 @@ const RestoreUpload: NextPage = () => {
   }
 
   return (
-    <div className="flex flex-col items-center justify-center max-w-6xl min-h-screen py-2 mx-auto">
+    <div className="flex flex-col items-end justify-end flex-1 w-full md:max-w-[90vw]  min-h-screen px-4 pt-6 text-center md:h-full bg-cyan-95 md:flex-auto md:px-12 md:rounded-3xl ">
       <Head>
-        <title>Restore Photos</title>
+        <title>Bildqualität verbessern</title>
         <link rel="icon" href="/favicon.ico" />
       </Head>
 
@@ -158,9 +158,9 @@ const RestoreUpload: NextPage = () => {
                       setRestoredLoaded(false);
                       setError(null);
                     }}
-                    className="px-4 py-2 mt-8 font-medium text-white transition rounded-full bg-cyan-40 hover:bg-cyan-50"
+                    className="px-4 py-2 mt-8 font-medium text-black transition bg-white border rounded-full hover:bg-gray-100"
                   >
-                    Upload New Photo
+                    Neues Bild
                   </button>
                 )}
                 {restoredLoaded && (
@@ -171,9 +171,9 @@ const RestoreUpload: NextPage = () => {
                         appendNewToName(photoName!)
                       );
                     }}
-                    className="px-4 py-2 mt-8 font-medium text-black transition bg-white border rounded-full hover:bg-gray-100"
+                    className="px-4 py-2 mt-8 font-medium text-white transition rounded-full bg-cyan-40 hover:bg-cyan-50"
                   >
-                    Download Restored Photo
+                    Downloade Verbessertes Bild
                   </button>
                 )}
               </div>

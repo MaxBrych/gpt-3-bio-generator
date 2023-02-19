@@ -17,7 +17,7 @@ export const tools: ToolProps[] = [
     icon: "https://drive.google.com/uc?export=view&id=1_1_yO6icwZJ0oSlw5zjMwjn6S620qIma",
   },
   {
-    name: "Grammatik korrigieren",
+    name: "Grammatik",
     id: 2,
     description: "Kontrolliert und berichtigt die Grammatik eines Textes",
     slug: "grammatik-korrigieren",
@@ -25,7 +25,7 @@ export const tools: ToolProps[] = [
     icon: "https://drive.google.com/uc?export=view&id=1hU_gjDdWEXx75MS-Sbk7bvR1tqs56X2J",
   },
   {
-    name: "Text Zusammenfassen",
+    name: "Zusammenfassen",
     id: 3,
     description: "Fasst einen Text mit den wichtigsten Informationen zusammen",
     slug: "text-zusammenfassen",

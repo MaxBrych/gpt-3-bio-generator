@@ -10,10 +10,10 @@ interface ToolPageProps {
 const Subheader: React.FC<ToolPageProps> = ({ tool }) => {
   return (
     <div className="fixed md:static flex w-[92vw] items-center justify-center md:w-full mt-2 top-20 left-4 right-4  ">
-      <header className="flex items-center justify-between gap-2 w-full pl-1 pr-5 rounded-full md:w-auto bg-cyan-90 lg:max-w-5xl h-14 sm:px-4">
+      <header className="flex items-center justify-between w-full gap-2 px-2 rounded-full sm:pr-4 md:w-auto bg-cyan-90 lg:max-w-5xl h-14 ">
         <Link
           href={"/"}
-          className="flex items-center justify-center  rounded-full h-9 w-9  hover:bg-cyan-80 md:w-10 md:h-10"
+          className="flex items-center justify-center rounded-full h-9 w-9 hover:bg-cyan-80 md:w-10 md:h-10"
         >
           <Image
             src={
