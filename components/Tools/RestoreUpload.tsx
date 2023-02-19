@@ -3,14 +3,12 @@ import { NextPage } from "next";
 import Head from "next/head";
 import Image from "next/image";
 import { useState } from "react";
-
 import { UploadDropzone } from "react-uploader";
 import { Uploader } from "uploader";
-import { CompareSlider } from "../image/CompareSlider";
-
-import LoadingDots from "../LoadingDots";
-import ResizablePanel from "../ResizablePanel";
-import Toggle from "../image/Toggle";
+import { CompareSlider } from "../../components/image/CompareSlider";
+import LoadingDots from "../../components/LoadingDots";
+import ResizablePanel from "../../components/ResizablePanel";
+import Toggle from "../../components/image/Toggle";
 import appendNewToName from "../../utils/appendNewToName";
 import downloadPhoto from "../../utils/downloadPhoto";
 
@@ -55,7 +53,7 @@ const RestoreUpload: NextPage = () => {
   async function generatePhoto(fileUrl: string) {
     await new Promise((resolve) => setTimeout(resolve, 500));
     setLoading(true);
-    const res = await fetch("/api/generate", {
+    const res = await fetch("/api/predictions", {
       method: "POST",
       headers: {
         "Content-Type": "application/json",
@@ -75,7 +73,7 @@ const RestoreUpload: NextPage = () => {
   return (
     <div className="flex flex-col items-center justify-center max-w-6xl min-h-screen py-2 mx-auto">
       <Head>
-        <title>Bild verbessern</title>
+        <title>Restore Photos</title>
         <link rel="icon" href="/favicon.ico" />
       </Head>
 
@@ -160,7 +158,7 @@ const RestoreUpload: NextPage = () => {
                     }}
                     className="px-4 py-2 mt-8 font-medium text-white transition bg-black rounded-full hover:bg-black/80"
                   >
-                    Bild hochladen
+                    Upload New Photo
                   </button>
                 )}
                 {restoredLoaded && (
@@ -173,7 +171,7 @@ const RestoreUpload: NextPage = () => {
                     }}
                     className="px-4 py-2 mt-8 font-medium text-black transition bg-white border rounded-full hover:bg-gray-100"
                   >
-                    Download verbessertes Bild
+                    Download Restored Photo
                   </button>
                 )}
               </div>

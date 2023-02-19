@@ -23,7 +23,7 @@
     "components/ToolList.tsx",
     "pages/[slug]/[slug].jsx",
     "pages/tools/[slug].tsx",
-    "pages/tools/restore.jsx"
+    "pages/tools/restore.tsx"
   ],
   "exclude": ["node_modules"]
 }
