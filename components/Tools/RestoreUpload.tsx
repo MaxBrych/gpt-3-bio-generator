@@ -158,7 +158,7 @@ const RestoreUpload: NextPage = () => {
                       setRestoredLoaded(false);
                       setError(null);
                     }}
-                    className="px-4 py-2 mt-8 font-medium text-black transition bg-white border rounded-full hover:bg-gray-100"
+                    className="h-12 px-4 py-2 mt-8 font-medium text-black transition bg-white border rounded-full hover:bg-gray-100"
                   >
                     Neues Bild
                   </button>
@@ -171,9 +171,9 @@ const RestoreUpload: NextPage = () => {
                         appendNewToName(photoName!)
                       );
                     }}
-                    className="px-4 py-2 mt-8 font-medium text-white transition rounded-full bg-cyan-40 hover:bg-cyan-50"
+                    className="h-12 px-4 py-2 mt-8 font-medium text-white transition rounded-full bg-cyan-40 hover:bg-cyan-50"
                   >
-                    Downloade Verbessertes Bild
+                    Downloade Bild
                   </button>
                 )}
               </div>
