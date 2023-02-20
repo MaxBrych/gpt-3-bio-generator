@@ -22,7 +22,7 @@ export default function Toggle({
             !sideBySide ? "text-gray-900" : "text-gray-500"
           }`}
         >
-          Side by Side
+          Nebeneinander
         </span>
         <Switch
           checked={sideBySide}
@@ -46,7 +46,7 @@ export default function Toggle({
               sideBySide ? "text-gray-900" : "text-gray-500"
             } `}
           >
-            Compare
+            Vergleichen
           </span>
         </Switch.Label>
       </div>

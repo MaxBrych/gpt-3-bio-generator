@@ -11,14 +11,14 @@ export const models: ModelProps[] = [
     name: "Chat",
     id: 1,
     description: "Beantwortet Fragen zu einem bestimmten Thema",
-    slug: "https://nk-ai-tools.vercel.app/tools/frage-beantworten",
+    slug: "/tools/frage-beantworten",
     icon: "https://drive.google.com/uc?export=view&id=1_1_yO6icwZJ0oSlw5zjMwjn6S620qIma",
   },
   {
-    name: "Bild generieren",
+    name: "Bild Verbesserung",
     id: 2,
-    description: "Coming soon",
-    slug: "https://nk-bildverbesserung.vercel.app/",
+    description: "Uploade ein Bild und verbessere die Auflösung",
+    slug: "/tools/restore",
     icon: "https://drive.google.com/uc?export=view&id=1_1_yO6icwZJ0oSlw5zjMwjn6S620qIma",
   },
 ];

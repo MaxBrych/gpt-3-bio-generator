@@ -17,7 +17,7 @@ export const tools: ToolProps[] = [
     icon: "https://drive.google.com/uc?export=view&id=1_1_yO6icwZJ0oSlw5zjMwjn6S620qIma",
   },
   {
-    name: "Grammatik korrigieren",
+    name: "Grammatik",
     id: 2,
     description: "Kontrolliert und berichtigt die Grammatik eines Textes",
     slug: "grammatik-korrigieren",
@@ -25,7 +25,7 @@ export const tools: ToolProps[] = [
     icon: "https://drive.google.com/uc?export=view&id=1hU_gjDdWEXx75MS-Sbk7bvR1tqs56X2J",
   },
   {
-    name: "Text Zusammenfassen",
+    name: "Zusammenfassen",
     id: 3,
     description: "Fasst einen Text mit den wichtigsten Informationen zusammen",
     slug: "text-zusammenfassen",
@@ -47,7 +47,7 @@ export const tools: ToolProps[] = [
     description: "Führt eine Konversation mit einem KI-Assistenten",
     slug: "gesprächspartner",
     toolPrompt:
-      "Im Folgenden sehen Sie ein Gespräch mit einem KI-Assistenten. Der Assistent ist hilfsbereit, kreativ, clever und sehr freundlich.\n\nMensch: Hallo, wer bist du?\nAI: Ich bin eine KI, die von OpenAI entwickelt wurde. Wie kann ich Ihnen heute helfen?\nMensch:",
+      "Im Folgenden sehen Sie ein Gespräch mit einem KI-Assistenten. Der Assistent ist hilfsbereit, kreativ, clever und sehr freundlich. Reagieren sie dem folgendem Input wie ein KI-Assistent:",
     icon: "https://drive.google.com/uc?export=view&id=1QCZW0R7QH5RWg3V59Q8AL-af9STrFiAx",
   },
   {
