@@ -9,15 +9,7 @@ export default function Header() {
         href="/"
         className="flex items-center justify-center flex-1 w-1/2 h-16 py-1 space-x-3"
       >
-        <div className="relative w-56 h-16">
-          <Image
-            className="object-fit-cover"
-            alt="Nordkurier KI Tools"
-            src={logo}
-            layout="fill"
-            objectFit="contain"
-          />
-        </div>
+        <Image alt="Nordkurier KI Tools" src={logo} width={224} height={56} />
       </Link>
     </header>
   );
