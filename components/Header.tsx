@@ -1,6 +1,5 @@
 import Image from "next/image";
 import Link from "next/link";
-import logo from "../public/nk_logo.svg";
 
 export default function Header() {
   return (
@@ -9,7 +8,12 @@ export default function Header() {
         href="/"
         className="flex items-center justify-center flex-1 w-1/2 h-16 py-1 space-x-3"
       >
-        <Image alt="Nordkurier KI Tools" src={logo} width={224} height={56} />
+        <Image
+          alt="Nordkurier KI Tools"
+          src="https://drive.google.com/uc?export=view&id=1oQSE6663WT_rgxojC6dkjT53tvXT89tu"
+          width={224}
+          height={56}
+        />
       </Link>
     </header>
   );
