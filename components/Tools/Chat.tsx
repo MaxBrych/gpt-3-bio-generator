@@ -94,7 +94,7 @@ const Chat: React.FC<ChatPageProps> = ({ tool }) => {
 
         <ResizablePanel>
           <AnimatePresence mode="wait">
-            <motion.div className="flex items-start justify-start my-10 space-y-10">
+            <motion.div className="flex items-start justify-start mb-24 md:my-10 space-y-10">
               {generatedBios && (
                 <>
                   <div className="flex flex-col items-start justify-start max-w-xl mx-auto space-y-8">
@@ -128,13 +128,12 @@ const Chat: React.FC<ChatPageProps> = ({ tool }) => {
       {/* INPUT */}
       <AnimatePresence exitBeforeEnter>
         <motion.div className="fixed md:static flex flex-row items-end justify-start w-[92vw] md:w-full gap-1 mb-8 left-4 bottom-2  md:gap-4">
-          <textarea
+          <input
             value={bio}
             //onKeyPress={(e) => generateBio(e)}
             onChange={(e) => setBio(e.target.value)}
-            rows={1}
-            onKeyDown={(e) => handleKeyDown(e)}
-            className="flex items-center justify-center flex-1 w-full h-12 p-3 overflow-hidden bg-white border-white rounded-full resize-none md:p-4 placeholder:text-sm md:h-14 hover:border-dark-95 focus:border-cyan-90 focus:ring-cyan-90"
+            onKeyPress={(e) => handleKeyDown(e)}
+            className="flex items-center justify-center flex-1 w-full h-12 p-3 overflow-hidden bg-white border-white rounded-full resize-y md:p-4 placeholder:text-sm md:h-14 hover:border-dark-95 focus:border-cyan-90 focus:ring-cyan-90"
             placeholder={"Dein Text hier..."}
           />
 
