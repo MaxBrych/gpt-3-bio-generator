@@ -14,7 +14,7 @@ export const tools: ToolProps[] = [
     description: "Beantwortet Fragen zu einem bestimmten Thema",
     slug: "frage-beantworten",
     toolPrompt: "",
-    icon: "https://drive.google.com/uc?export=view&id=1_1_yO6icwZJ0oSlw5zjMwjn6S620qIma",
+    icon: "https://cdn.discordapp.com/attachments/1084536803157090514/1084725912739786842/question.png",
   },
   {
     name: "Grammatik",
@@ -22,7 +22,7 @@ export const tools: ToolProps[] = [
     description: "Kontrolliert und berichtigt die Grammatik eines Textes",
     slug: "grammatik-korrigieren",
     toolPrompt: "Korrigieren Sie folgendes ins Hochdeutsch: ",
-    icon: "https://drive.google.com/uc?export=view&id=1hU_gjDdWEXx75MS-Sbk7bvR1tqs56X2J",
+    icon: "https://cdn.discordapp.com/attachments/1084536803157090514/1084725780170407987/kindgrammar.png",
   },
   {
     name: "Zusammenfassen",
@@ -31,7 +31,7 @@ export const tools: ToolProps[] = [
     slug: "text-zusammenfassen",
     toolPrompt:
       "Fassen Sie den folgenden Text kurz zusammen und sodass die für den Kontext des Textes wichtigen Informationen beinhaltet sind:",
-    icon: "https://drive.google.com/uc?export=view&id=1F8ux5RikXKGN_sduvCr4GORrt0YmFyim",
+    icon: "https://cdn.discordapp.com/attachments/1084536803157090514/1084725780388524052/kindsummary.png",
   },
   {
     name: "Übersetzer",
@@ -39,7 +39,7 @@ export const tools: ToolProps[] = [
     description: "Übersetzt Fremdsprachen in die deutsche Sprache",
     slug: "übersetzer",
     toolPrompt: "Übersetze folgendes in Deutsch:",
-    icon: "https://drive.google.com/uc?export=view&id=16r_GlMNqAxZkfk-yzBhiS4cxjTP9PjIK",
+    icon: "https://cdn.discordapp.com/attachments/1084536803157090514/1084725780585652274/kindtranslation.png",
   },
   {
     name: "Gesprächspartner",
@@ -48,7 +48,7 @@ export const tools: ToolProps[] = [
     slug: "gesprächspartner",
     toolPrompt:
       "Im Folgenden sehen Sie ein Gespräch mit einem KI-Assistenten. Der Assistent ist hilfsbereit, kreativ, clever und sehr freundlich. Reagieren sie dem folgendem Input wie ein KI-Assistent:",
-    icon: "https://drive.google.com/uc?export=view&id=1QCZW0R7QH5RWg3V59Q8AL-af9STrFiAx",
+    icon: "https://cdn.discordapp.com/attachments/1084536803157090514/1084725779948118087/kindchat.png",
   },
   {
     name: "Analogie erstellen",
@@ -57,7 +57,7 @@ export const tools: ToolProps[] = [
     slug: "analogy-erstellen",
     toolPrompt:
       "Erstellen Sie eine passende Analogie zum folgendem Satz die beide genannten Wörter beinhalten muss:",
-    icon: "https://drive.google.com/uc?export=view&id=11zx_GRYhbbqR9MIutt2hoPjCJHa-kGzW",
+    icon: "https://cdn.discordapp.com/attachments/1084536803157090514/1084725779713241139/kindanalogy.png",
   },
   {
     name: "Synonym erstellen",
@@ -65,6 +65,6 @@ export const tools: ToolProps[] = [
     description: "Erstellt ein Synonym zu einem Wort",
     slug: "synonym-erstellen",
     toolPrompt: "Erstelle drei passende Synonyme für das folgende Wort:",
-    icon: "https://drive.google.com/uc?export=view&id=11zx_GRYhbbqR9MIutt2hoPjCJHa-kGzW",
+    icon: "https://cdn.discordapp.com/attachments/1084536803157090514/1084725779713241139/kindanalogy.png",
   },
 ];

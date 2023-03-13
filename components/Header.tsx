@@ -10,7 +10,7 @@ export default function Header() {
       >
         <Image
           alt="Nordkurier KI Tools"
-          src="https://drive.google.com/uc?export=view&id=1oQSE6663WT_rgxojC6dkjT53tvXT89tu"
+          src="https://cdn.discordapp.com/attachments/1084536803157090514/1084725912324558888/logo.png"
           width={224}
           height={56}
         />

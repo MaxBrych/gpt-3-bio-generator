@@ -8,11 +8,10 @@ interface ModelListProps {
 
 const ModelList: React.FC<ModelListProps> = ({ models }) => (
   <>
-    <a href="https://ai-photo-restorer-rosy.vercel.app/">
-      <h3 className="mb-2 text-lg font-bold md:mb-4 md:text-xl md:font-bold">
-        Models
-      </h3>
-    </a>
+    <h3 className="mb-2 text-lg font-bold md:mb-4 md:text-xl md:font-bold">
+      Models
+    </h3>
+
     <div className="grid w-full grid-cols-3 gap-2 bg-white md:gap-4">
       {models.map((model) => (
         <Link

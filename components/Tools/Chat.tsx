@@ -144,7 +144,7 @@ const Chat: React.FC<ChatPageProps> = ({ tool }) => {
             >
               <Image
                 src={
-                  "https://drive.google.com/uc?export=view&id=1Xo-Lu07Qzm9zhs3BY8EGhNwZ8AL9xbVD"
+                  "https://cdn.discordapp.com/attachments/1084536803157090514/1084725912949510184/send.png"
                 }
                 alt={""}
                 width={20}

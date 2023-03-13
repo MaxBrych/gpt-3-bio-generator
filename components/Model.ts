@@ -12,13 +12,13 @@ export const models: ModelProps[] = [
     id: 1,
     description: "Beantwortet Fragen zu einem bestimmten Thema",
     slug: "/tools/frage-beantworten",
-    icon: "https://drive.google.com/uc?export=view&id=1_1_yO6icwZJ0oSlw5zjMwjn6S620qIma",
+    icon: "https://cdn.discordapp.com/attachments/1084536803157090514/1084725779948118087/kindchat.png",
   },
   {
     name: "Bild Verbesserung",
     id: 2,
     description: "Uploade ein Bild und verbessere die Auflösung",
     slug: "/tools/restore",
-    icon: "https://drive.google.com/uc?export=view&id=1_1_yO6icwZJ0oSlw5zjMwjn6S620qIma",
+    icon: "https://cdn.discordapp.com/attachments/1084536803157090514/1084725779713241139/kindanalogy.png",
   },
 ];
