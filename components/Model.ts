@@ -15,9 +15,9 @@ export const models: ModelProps[] = [
     icon: "https://cdn.discordapp.com/attachments/1084536803157090514/1084725779948118087/kindchat.png",
   },
   {
-    name: "Bild Verbesserung",
+    name: "Bild",
     id: 2,
-    description: "Uploade ein Bild und verbessere die Auflösung",
+    description: "Verbessere die Auflösung oder entferne den Hintergrund",
     slug: "/tools/restore",
     icon: "https://cdn.discordapp.com/attachments/1084536803157090514/1084725779713241139/kindanalogy.png",
   },
