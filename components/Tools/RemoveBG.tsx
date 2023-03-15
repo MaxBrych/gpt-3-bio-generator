@@ -49,7 +49,7 @@ const Home = () => {
     <div className="flex flex-col items-center justify-center flex-1 w-full md:max-w-[90vw]  min-h-screen px-4 pt-6 text-center md:h-full bg-cyan-95 md:flex-auto md:px-12 md:rounded-3xl ">
       <div
         {...getRootProps()}
-        className="flex items-center justify-center w-64 h-64 bg-gray-200 border-4 border-gray-300 border-dashed rounded-md cursor-pointer"
+        className="flex items-center justify-center w-64 h-64 border-4 border-gray-300 border-dashed rounded-md cursor-pointer bg-cyan-95"
       >
         <input {...getInputProps()} />
         <p className="text-center">
