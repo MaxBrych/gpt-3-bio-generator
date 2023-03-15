@@ -1,8 +1,11 @@
 import { useState } from "react";
 import { useDropzone } from "react-dropzone";
 import axios from "axios";
+import downloadPhoto from "../../utils/downloadPhoto";
+import appendNewToName from "../../utils/appendNewToName";
 
 const Home = () => {
+  const [photoName, setPhotoName] = useState<string | null>(null);
   const [responseImage, setResponseImage] = useState<string | null>(null);
 
   const onDrop = async (acceptedFiles: File[]) => {
@@ -49,7 +52,7 @@ const Home = () => {
     <div className="flex flex-col items-center justify-center flex-1 w-full md:max-w-[90vw]  min-h-screen px-4 pt-6 text-center md:h-full bg-cyan-95 md:flex-auto md:px-12 md:rounded-3xl ">
       <div
         {...getRootProps()}
-        className="flex items-center justify-center w-64 h-64 border-4 border-gray-300 border-dashed rounded-md cursor-pointer bg-cyan-95"
+        className="flex items-center justify-center w-full border-2 border-gray-300 border-dashed rounded-md cursor-pointer h-80 md:w-2/3 bg-cyan-95"
       >
         <input {...getInputProps()} />
         <p className="text-center">
