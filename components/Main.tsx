@@ -8,7 +8,7 @@ export const Main = () => {
   return (
     <main className="flex flex-col items-start justify-start flex-1 w-full max-w-5xl min-h-screen px-4 pt-8 text-center bg-white md:pt-12 md:px-12">
       <h1 className="max-w-2xl mb-4 text-3xl font-semibold text-left text-slate-900 md:mb-6">
-        Produktiver durch KI!
+        Willkommen zurück!
       </h1>
       <ModelList models={models} />
       <p className="mt-5 text-slate-500"></p>
