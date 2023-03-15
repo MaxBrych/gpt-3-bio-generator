@@ -41,7 +41,7 @@ const Home = () => {
   const { getRootProps, getInputProps } = useDropzone({
     onDrop,
     accept: {
-      image: ["png", "jpeg", "gif"],
+      image: ["*"],
     },
   });
 
