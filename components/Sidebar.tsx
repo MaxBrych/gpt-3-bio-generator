@@ -30,7 +30,7 @@ const Sidebar: React.FC<ToolListProps> = ({ tools }) => {
       <div
         className={`${
           isOpen ? "block" : "hidden"
-        } fixed z-10 top-16 right-0 h-full w-full gap-2 px-4 py-4 bg-white w- md:hidden md:flex-col md:gap-2`}
+        } fixed z-10 md:relative md:top-0 top-16 right-0 h-full w-full gap-2 px-4 py-4 bg-white w- md:flex md:flex-col md:gap-2`}
       >
         {tools.map((tool) => (
           <Link

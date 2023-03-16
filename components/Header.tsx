@@ -6,7 +6,7 @@ export default function Header() {
     <header className="fixed top-0 flex items-center justify-center w-full h-16 px-4 bg-white border-b md:static lg:max-w-5xl lg:rounded-t-xl border-dark-95">
       <Link
         href="/"
-        className="flex items-center justify-center flex-1 w-1/2 h-16 py-1 space-x-3"
+        className="flex items-center justify-start flex-1 w-1/2 h-16 py-1 space-x-3 md:items-center md:justify-center"
       >
         <Image
           alt="Nordkurier KI Tools"

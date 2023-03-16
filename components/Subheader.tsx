@@ -17,7 +17,7 @@ const Subheader: React.FC<ToolPageProps> = ({ tool }) => {
         >
           <Image
             src={
-              "https://drive.google.com/uc?export=view&id=1bxXQP9_KHXoOE-ygEfE7M1HrC3rBMEDh"
+              "https://cdn.discordapp.com/attachments/1084536803157090514/1085986547318407178/chevron.png"
             }
             width={24}
             height={24}
