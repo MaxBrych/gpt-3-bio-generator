@@ -65,13 +65,12 @@ const Chat: React.FC<ChatPageProps> = ({ tool }) => {
     setLoading(false);
   };
 
-  function handleKeyDown(event: KeyboardEvent<HTMLTextAreaElement>) {
-    if (event.keyCode === 13) {
-      // check if "enter-key" is pressed
-      event.preventDefault(); // prevent default behavior of "enter-key" in textarea
-      handleSubmit();
+  const handleKeyDown = (e: any) => {
+    if (e.key === "Enter" && !e.shiftKey) {
+      e.preventDefault();
+      generateBio(e);
     }
-  }
+  };
 
   function handleSubmit() {
     // handle form submission logic here
