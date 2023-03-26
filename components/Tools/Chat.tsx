@@ -6,6 +6,7 @@ import { Toaster, toast } from "react-hot-toast";
 import DropDown, { VibeType } from "../DropDown";
 import Image from "next/image";
 import { ToolProps, tools } from "../Tools";
+import TextareaAutosize from "react-textarea-autosize";
 
 import { useState, KeyboardEvent } from "react";
 import Subheader from "../Subheader";
@@ -71,6 +72,7 @@ const Chat: React.FC<ChatPageProps> = ({ tool }) => {
       handleSubmit();
     }
   }
+
   function handleSubmit() {
     // handle form submission logic here
     console.log("Submitting text:", generatedBios);
@@ -128,13 +130,14 @@ const Chat: React.FC<ChatPageProps> = ({ tool }) => {
       {/* INPUT */}
       <AnimatePresence exitBeforeEnter>
         <motion.div className="fixed md:static flex flex-row items-end justify-start w-[92vw] md:w-full gap-1 mb-6 md:mb-8 left-4 bottom-2  md:gap-4">
-          <textarea
+          <TextareaAutosize
             value={bio}
-            //onKeyPress={(e) => generateBio(e)}
+            onKeyDown={handleKeyDown}
             onChange={(e) => setBio(e.target.value)}
-            //onKeyPress={(e) => handleKeyDown(e)}
             className="flex items-center justify-center flex-1 w-full h-auto p-3 bg-white border-white resize-y rounded-2xl md:p-4 placeholder:text-sm md:h-14 hover:border-dark-95 focus:border-cyan-90 focus:ring-cyan-90"
             placeholder={"Dein Text hier..."}
+            minRows={1}
+            maxRows={4}
           />
 
           {!loading && (
