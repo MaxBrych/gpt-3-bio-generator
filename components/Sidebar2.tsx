@@ -34,7 +34,7 @@ const Sidebar2: React.FC<UseListProps> = ({ tools }) => {
           <Link
             href="/tools/remove"
             key={tool.id}
-            className={`flex items-center justify-start gap-2 p-2 rounded-full cursor-pointer h-12 transition md:p-4 md:border-cyan-90 md:hover:bg-cyan-95 ${
+            className={`flex items-center justify-start gap-2 p-2 rounded-full cursor-pointer h-12 transition md:p-4 md:border-cyan-90 hover:bg-cyan-95 hover:text-cyan-40 ${
               router.pathname == `/tools/${tool.slug}`
                 ? "bg-cyan-90"
                 : "bg-white"
@@ -43,7 +43,7 @@ const Sidebar2: React.FC<UseListProps> = ({ tools }) => {
             <div className="flex items-center justify-center w-8 h-8 rounded-xl bg-cyan-95">
               <Image src={tool.icon} alt={tool.name} width={20} height={20} />
             </div>
-            <h1 className="font-medium leading-3 text-m md:text-sm md:text-left">
+            <h1 className="font-semibold leading-3 text-m md:text-sm md:text-left">
               {tool.name}
             </h1>
           </Link>
